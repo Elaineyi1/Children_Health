@@ -1,0 +1,239 @@
+---
+title: ""
+subtitle: ""
+author: 
+  - Boxuan Yi
+format: 
+  pdf:
+    documentclass: article
+    geometry: margin = 1in
+    abstract: ""
+date: today
+date-format: long
+number-sections: true
+thanks: "Code and data supporting this analysis is available at: https://github.com/Elaineyi1/Children_Health"
+toc: true
+bibliography: references.bib
+---
+# Introduction
+
+# Data
+## Overview
+## Methodology and Measurement
+```{r}
+#| include: false
+library(arrow)
+library(here)
+library(haven)
+library(modelsummary)
+library(tidyr)
+library(janitor)
+library(dplyr)
+library(ggplot2)
+```
+
+```{r}
+#| include: false
+data_cleaned <- read_parquet(here::here("data", "02-analysis_data", "children_health.parquet"))
+
+train_data <- read_parquet(here::here("data", "02-analysis_data", "train_data.parquet"))
+test_data <- read_parquet(here::here("data", "02-analysis_data", "test_data.parquet"))
+```
+
+## Data Visualizations and Analysis
+```{r}
+#| message: false
+#| echo: false
+#| warning: false
+#| label: fig-age
+#| fig-cap: Distribution of Child's Age and Whether the Child Needs Treatment for Emotional Development Behavior
+
+data_cleaned |> ggplot(mapping = aes(x = age, fill = child_emotion_develop)) +
+  geom_bar() +
+  labs(x = "Age", y = "Number of observations", fill = "Whether a Child Needs Treatment \nfor Emotional Development Behaviour") +
+  theme(legend.position = "bottom")
+```
+
+```{r}
+#| label: fig-binary1
+#| echo: false
+#| warning: false
+#| message: false
+#| layout-ncol: 1
+#| fig-width: 7
+#| fig-height: 2
+#| fig-cap: Core Based Statistical Area (CBSA) Status refers to the classification of a geographic area based on its relationship to an urban center, where CBSA is an area that has at least one urban center with a population of 10,000 or more. 
+#| fig-subcap: ["Child's Sex and Emotion Developemnt", "CBSA and Child's Emotional Development", "Tenure of Living Places and Child's Emotional Development"]
+
+data_cleaned |> ggplot(aes(x=sex,fill = factor(child_emotion_develop))) +
+  geom_bar(position = "fill") +
+  scale_fill_manual(values = c("Yes" = "azure3", "No" = "azure4"))+
+  coord_flip()+
+  labs(fill = "Whether a Child Needs \nTreatment for Emotional \nDevelopment Behaviour", x = "Sex", y = "Proportion") +
+  guides(fill = guide_legend(position = "bottom"))
+
+data_cleaned |> ggplot(aes(x=cbsa,fill = factor(child_emotion_develop))) +
+  geom_bar(position = "fill") +
+  scale_fill_manual(values = c("Yes" = "azure3", "No" = "azure4"))+
+  coord_flip()+
+  labs(fill = "Whether a Child Needs \nTreatment for Emotional \nDevelopment Behaviour", x = "Area Status", y = "Proportion") +
+  guides(fill = guide_legend(position = "bottom"))
+
+data_cleaned |> ggplot(aes(x=tenure,fill = factor(child_emotion_develop))) +
+  geom_bar(position = "fill") +
+  scale_fill_manual(values = c("Yes" = "azure3", "No" = "azure4"))+
+  coord_flip()+
+  labs(fill = "Whether a Child Needs \nTreatment for Emotional \nDevelopment Behaviour", x = "Tenure", y = "Proportion") +
+  guides(fill = guide_legend(position = "bottom"))
+```
+
+```{r}
+#| label: fig-binary2
+#| echo: false
+#| warning: false
+#| message: false
+#| layout-ncol: 1
+#| fig-width: 7
+#| fig-height: 2
+#| fig-cap: Limited ability refers to a child's restriction or inability to do the things that most children of the same age can do.
+#| fig-subcap: ["Child's Race and Emotion Developemnt", "Child's English Level and Emotion Developemnt", "Child's Limited Ability and Need for Emotional Development Treatment"]
+
+data_cleaned |> ggplot(aes(x=race,fill = factor(child_emotion_develop))) +
+  geom_bar(position = "fill") +
+  scale_fill_manual(values = c("Yes" = "azure3", "No" = "azure4"))+
+  coord_flip()+
+  labs(fill = "Whether a Child Needs \nTreatment for Emotional \nDevelopment Behaviour", x = "Race", y = "Proportion") +
+  guides(fill = guide_legend(position = "right"))
+
+data_cleaned |> ggplot(aes(x=english,fill = factor(child_emotion_develop))) +
+  geom_bar(position = "fill") +
+  scale_fill_manual(values = c("Yes" = "azure3", "No" = "azure4"))+
+  coord_flip()+
+  labs(fill = "Whether a Child Needs \nTreatment for Emotional \nDevelopment Behaviour", x = "English Level", y = "Proportion") +
+  guides(fill = guide_legend(position = "right"))
+
+data_cleaned |> ggplot(aes(x=child_limited_ability,fill = factor(child_emotion_develop))) +
+  geom_bar(position = "fill") +
+  scale_fill_manual(values = c("Yes" = "azure3", "No" = "azure4"))+
+  coord_flip()+
+  labs(fill = "Whether a Child Needs \nTreatment for Emotional \nDevelopment Behaviour", x = "Limited Ability", y = "Proportion") +
+  guides(fill = guide_legend(position = "right"))
+
+```
+# Model
+## Model Set-up
+$$
+\begin{aligned}
+y_i | \pi_i & \sim \mbox{Bern}(\pi_i) \\
+\mbox{logit}(\pi_i) &= \beta_0 + \beta_1 \times \mbox{Age Group}_i + \beta_2 \times \mbox{Race}_i + \beta_3 \times \mbox{English}_i + \beta_4 \times \mbox{Child Limited Ability}_i \\
+\beta_0 & \sim \mbox{Normal}(0, 2.5) \\
+\beta_1 & \sim \mbox{Normal}(0, 2.5) \\
+\beta_2 & \sim \mbox{Normal}(0, 2.5) \\
+\beta_3 & \sim \mbox{Normal}(0, 2.5) \\
+\beta_4 & \sim \mbox{Normal}(0, 2.5)
+\end{aligned}
+$$
+
+where:
+
+- $y_i$ is the dependent variable, representing whether a child needs treatment for emotional development behavior, where the outcome is binary (yes or no).
+- $\beta_0$ is the intercept term, representing the value when all the predictor variables are zero. It has a prior distribution that is normal with a mean of 0 and a standard deviation of 2.5.
+- $\beta_1$, $\beta_2$, $\beta_3$, $\beta_4$ represent the effects of age group, race, English proficiency, and child limited ability, respectively, on the log-odds of a child needing treatment for emotional development behavior, with each having a prior distribution of Normal(0, 2.5).
+
+
+## Model Justification and Limitations
+
+```{r}
+#| include: false
+model <- readRDS(file = here::here("models/model.rds"))
+```
+
+# Results
+```{r}
+#| message: false
+#| echo: false
+#| warning: false
+#| label: tbl-model
+#| tbl-cap: Estimating Whether a Child Needs Treatment for Emotional Development Behavior Based on Age Group, Race, English Proficiency, and Limited Ability
+
+modelsummary(
+  list(
+    "Treatment for Emotion Developement" = model
+  )
+)
+```
+
+# Discussions
+
+# Appendix
+## Surveys and Sampling
+## Data Cleaning
+## Posterior Predictive Checks
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+```{r}
+#| label: fig-race_and_cbsa
+#| echo: false
+#| warning: false
+#| message: false
+#| fig-width: 7
+#| fig-height: 3
+#| fig-cap: Core Based Statistical Area (CBSA) Status refers to the classification of a geographic area based on its relationship to an urban center, where CBSA is an area that has at least one urban center with a population of 10,000 or more. 
+ 
+data_cleaned |> ggplot(aes(x=race,fill = factor(cbsa))) +
+  geom_bar(position = "fill") +
+  scale_fill_manual(values = c("Located outside CBSA" = "azure3","Located within CBSA" = "azure4")) +
+  coord_flip()+
+  labs(fill = "Core Based Statistical \nArea Status", x = "Race", y = "Proportion") +
+  guides(fill = guide_legend(position = "right")) +
+  ggtitle("
+Proportion of Core Based Statistical \nArea Status by Race")
+```
+
+```{r}
+#| label: fig-hh_kids
+#| echo: false
+#| warning: false
+#| message: false
+data_transformed <- data_cleaned |>
+  group_by(hhids) |>
+  mutate(
+    total_kids = n(),
+    mental_health_count = sum(child_emotion_develop == "Yes", na.rm = TRUE),
+    mental_health_proportion = mental_health_count / total_kids
+  ) |>
+  filter(!is.na(child_emotion_develop)) |>
+  filter(mental_health_count > 0) 
+
+ggplot(data_transformed, aes(x = mental_health_proportion)) +
+  geom_histogram(binwidth = 0.05, fill = "skyblue", color = "black", alpha = 0.7) +
+  theme_minimal() +
+  labs(
+    x = "Proportion of Children with Mental Health Issues",
+    y = "Count of Households",
+    title = "Proportion of Children with Mental Health Issues in \nHouseholds with Mental Health Issues"
+  ) +
+  scale_x_continuous(labels = scales::percent)
+```
+
+\newpage
+# References
