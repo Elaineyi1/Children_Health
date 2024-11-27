@@ -1,0 +1,501 @@
+id,child_emotion_develop,child_limited_ability,race,age,tenure,kids_number,sex,cbsa,age_group,english
+1,Yes,No,White,3,Rented,4 or more children,Male,Located within CBSA,6 or younger,NA
+2,No,No,Asian,3,Owned free and clear,4 or more children,Female,Located within CBSA,6 or younger,NA
+3,No,No,White,17,Occupied without payment of rent,3 children,Male,Located outside CBSA,13-17,Very well
+4,No,No,Native Hawaiian or Pacific Islander,13,Owned with mortgage or loan,3 children,Female,Located outside CBSA,13-17,Very well
+5,No,No,White,12,Owned with mortgage or loan,4 or more children,Male,Located outside CBSA,7-12,Not at all
+6,Yes,No,American Indian or Alaska Native,10,Rented,1 child,Female,Located outside CBSA,7-12,Very well
+7,No,No,Asian,7,Owned with mortgage or loan,2 children,Male,Located outside CBSA,7-12,Well
+8,Yes,No,White,9,Owned with mortgage or loan,1 child,Female,Located within CBSA,7-12,Not well
+9,No,No,White,6,Owned with mortgage or loan,4 or more children,Female,Located within CBSA,6 or younger,Very well
+10,No,No,White,4,Owned with mortgage or loan,4 or more children,Male,Located within CBSA,6 or younger,NA
+11,No,No,White,5,Owned free and clear,2 children,Male,Located within CBSA,6 or younger,Well
+12,No,Yes,White,2,Owned with mortgage or loan,3 children,Male,Located within CBSA,6 or younger,NA
+13,Yes,No,White,10,Owned with mortgage or loan,3 children,Male,Located within CBSA,7-12,Very well
+14,No,Yes,White,3,Owned with mortgage or loan,2 children,Male,Located within CBSA,6 or younger,NA
+15,No,Yes,White,12,Owned with mortgage or loan,2 children,Female,Located within CBSA,7-12,Well
+16,No,No,White,1,Owned with mortgage or loan,2 children,Female,Located within CBSA,6 or younger,NA
+17,No,No,White,16,Owned with mortgage or loan,4 or more children,Male,Located within CBSA,13-17,Well
+18,No,No,Mixed race,16,Rented,2 children,Female,Located outside CBSA,13-17,Very well
+19,Yes,No,White,1,Rented,2 children,Male,Located within CBSA,6 or younger,NA
+20,No,No,White,14,Rented,2 children,Female,Located within CBSA,13-17,Not at all
+21,No,No,White,10,Owned free and clear,3 children,Female,Located outside CBSA,7-12,Not well
+22,No,Yes,White,6,Owned with mortgage or loan,2 children,Male,Located outside CBSA,6 or younger,Well
+23,Yes,No,Native Hawaiian or Pacific Islander,8,Owned with mortgage or loan,3 children,Male,Located within CBSA,7-12,Very well
+24,Yes,No,Black,15,Rented,2 children,Female,Located outside CBSA,13-17,Very well
+25,Yes,Yes,American Indian or Alaska Native,16,Owned with mortgage or loan,2 children,Male,Located within CBSA,13-17,Well
+26,No,No,White,14,Owned with mortgage or loan,1 child,Male,Located within CBSA,13-17,Very well
+27,No,Yes,Black,8,Owned with mortgage or loan,3 children,Male,Located within CBSA,7-12,Very well
+28,No,No,White,15,Owned with mortgage or loan,3 children,Female,Located within CBSA,13-17,Very well
+29,Yes,Yes,White,16,Owned free and clear,1 child,Male,Located outside CBSA,13-17,Very well
+30,No,Yes,White,14,Owned free and clear,3 children,Male,Located outside CBSA,13-17,Not well
+31,No,No,White,2,Owned free and clear,1 child,Male,Located within CBSA,6 or younger,NA
+32,No,No,White,2,Rented,3 children,Male,Located within CBSA,6 or younger,NA
+33,No,No,White,13,Owned with mortgage or loan,2 children,Female,Located within CBSA,13-17,Not at all
+34,No,No,White,16,Owned with mortgage or loan,4 or more children,Female,Located within CBSA,13-17,Very well
+35,No,No,Asian,10,Owned free and clear,3 children,Male,Located within CBSA,7-12,Well
+36,Yes,No,Black,6,Rented,1 child,Female,Located within CBSA,6 or younger,Very well
+37,No,No,Black,5,Rented,3 children,Female,Located within CBSA,6 or younger,Not well
+38,Yes,No,White,3,Owned free and clear,2 children,Female,Located within CBSA,6 or younger,NA
+39,Yes,Yes,White,4,Rented,3 children,Female,Located outside CBSA,6 or younger,NA
+40,No,No,White,14,Rented,1 child,Female,Located outside CBSA,13-17,Very well
+41,Yes,No,Asian,6,Owned with mortgage or loan,3 children,Female,Located outside CBSA,6 or younger,Very well
+42,No,No,Mixed race,2,Rented,2 children,Female,Located within CBSA,6 or younger,NA
+43,Yes,No,Asian,14,Owned with mortgage or loan,3 children,Female,Located within CBSA,13-17,Well
+44,No,No,White,16,Owned free and clear,4 or more children,Male,Located within CBSA,13-17,Very well
+45,Yes,No,White,4,Owned free and clear,3 children,Male,Located within CBSA,6 or younger,NA
+46,No,No,White,2,Owned with mortgage or loan,4 or more children,Female,Located outside CBSA,6 or younger,NA
+47,No,No,White,6,Owned free and clear,1 child,Male,Located within CBSA,6 or younger,Well
+48,Yes,No,Black,11,Owned with mortgage or loan,3 children,Male,Located within CBSA,7-12,Very well
+49,Yes,No,White,4,Owned with mortgage or loan,2 children,Female,Located within CBSA,6 or younger,NA
+50,Yes,No,Mixed race,10,Rented,2 children,Male,Located outside CBSA,7-12,Very well
+51,No,Yes,Mixed race,9,Owned with mortgage or loan,2 children,Female,Located within CBSA,7-12,Not well
+52,Yes,No,American Indian or Alaska Native,13,Owned with mortgage or loan,2 children,Female,Located within CBSA,13-17,Very well
+53,Yes,Yes,White,8,Owned with mortgage or loan,2 children,Female,Located within CBSA,7-12,Well
+54,No,Yes,White,9,Rented,2 children,Male,Located within CBSA,7-12,Very well
+55,Yes,No,Black,1,Rented,4 or more children,Male,Located within CBSA,6 or younger,NA
+56,No,No,White,13,Rented,1 child,Female,Located within CBSA,13-17,Very well
+57,No,Yes,Mixed race,5,Owned free and clear,2 children,Male,Located within CBSA,6 or younger,Not well
+58,No,No,White,11,Owned with mortgage or loan,1 child,Male,Located within CBSA,7-12,Very well
+59,No,Yes,White,17,Rented,2 children,Male,Located within CBSA,13-17,Very well
+60,No,No,Native Hawaiian or Pacific Islander,12,Owned with mortgage or loan,2 children,Male,Located within CBSA,7-12,Very well
+61,No,Yes,White,3,Occupied without payment of rent,1 child,Female,Located within CBSA,6 or younger,NA
+62,No,No,White,3,Owned with mortgage or loan,1 child,Male,Located within CBSA,6 or younger,NA
+63,Yes,No,Mixed race,8,Owned free and clear,2 children,Female,Located within CBSA,7-12,Not at all
+64,No,Yes,Asian,11,Owned with mortgage or loan,1 child,Female,Located outside CBSA,7-12,Well
+65,No,No,Mixed race,9,Owned with mortgage or loan,2 children,Male,Located within CBSA,7-12,Well
+66,No,No,Asian,12,Rented,4 or more children,Female,Located within CBSA,7-12,Well
+67,No,No,Asian,2,Owned with mortgage or loan,2 children,Female,Located within CBSA,6 or younger,NA
+68,No,No,White,3,Rented,1 child,Male,Located within CBSA,6 or younger,NA
+69,No,No,Mixed race,15,Owned free and clear,4 or more children,Male,Located within CBSA,13-17,Very well
+70,No,No,White,12,Owned with mortgage or loan,2 children,Female,Located within CBSA,7-12,Very well
+71,No,No,White,16,Owned with mortgage or loan,2 children,Female,Located within CBSA,13-17,Very well
+72,No,No,White,17,Rented,1 child,Male,Located within CBSA,13-17,Not well
+73,Yes,No,White,1,Rented,1 child,Female,Located within CBSA,6 or younger,NA
+74,No,Yes,Asian,7,Rented,2 children,Female,Located within CBSA,7-12,Very well
+75,No,No,White,8,Owned with mortgage or loan,1 child,Female,Located within CBSA,7-12,Very well
+76,No,No,White,11,Owned with mortgage or loan,2 children,Female,Located within CBSA,7-12,Very well
+77,No,No,White,1,Rented,4 or more children,Male,Located within CBSA,6 or younger,NA
+78,No,No,White,4,Owned free and clear,3 children,Male,Located outside CBSA,6 or younger,NA
+79,No,Yes,White,14,Rented,2 children,Female,Located within CBSA,13-17,Very well
+80,Yes,Yes,White,5,Owned with mortgage or loan,1 child,Male,Located within CBSA,6 or younger,Very well
+81,Yes,No,White,9,Owned free and clear,3 children,Male,Located outside CBSA,7-12,Very well
+82,Yes,No,White,15,Owned with mortgage or loan,4 or more children,Female,Located within CBSA,13-17,Not well
+83,No,Yes,White,13,Owned with mortgage or loan,3 children,Male,Located outside CBSA,13-17,Not well
+84,Yes,No,White,17,Owned with mortgage or loan,2 children,Male,Located outside CBSA,13-17,Very well
+85,No,No,American Indian or Alaska Native,9,Owned free and clear,4 or more children,Female,Located outside CBSA,7-12,Very well
+86,No,Yes,Black,8,Owned with mortgage or loan,4 or more children,Female,Located within CBSA,7-12,Very well
+87,No,No,American Indian or Alaska Native,13,Owned with mortgage or loan,3 children,Male,Located within CBSA,13-17,Very well
+88,Yes,No,White,9,Rented,1 child,Female,Located outside CBSA,7-12,Well
+89,No,No,Black,17,Owned free and clear,1 child,Female,Located within CBSA,13-17,Very well
+90,No,No,Asian,15,Owned free and clear,1 child,Female,Located within CBSA,13-17,Well
+91,No,No,White,12,Owned with mortgage or loan,2 children,Female,Located within CBSA,7-12,Very well
+92,No,No,Black,6,Owned with mortgage or loan,2 children,Female,Located outside CBSA,6 or younger,Well
+93,Yes,No,White,7,Owned with mortgage or loan,1 child,Female,Located within CBSA,7-12,Very well
+94,No,No,American Indian or Alaska Native,2,Owned free and clear,3 children,Male,Located within CBSA,6 or younger,NA
+95,Yes,No,White,10,Rented,2 children,Male,Located within CBSA,7-12,Very well
+96,No,Yes,White,14,Rented,3 children,Female,Located within CBSA,13-17,Very well
+97,No,No,White,2,Owned with mortgage or loan,2 children,Male,Located outside CBSA,6 or younger,NA
+98,No,Yes,Mixed race,14,Owned with mortgage or loan,2 children,Female,Located within CBSA,13-17,Very well
+99,Yes,No,White,3,Occupied without payment of rent,3 children,Male,Located within CBSA,6 or younger,NA
+100,No,No,Native Hawaiian or Pacific Islander,10,Owned with mortgage or loan,1 child,Female,Located within CBSA,7-12,Not at all
+101,No,No,White,9,Owned with mortgage or loan,3 children,Female,Located within CBSA,7-12,Very well
+102,No,No,Asian,17,Rented,2 children,Male,Located within CBSA,13-17,Very well
+103,No,No,American Indian or Alaska Native,1,Owned free and clear,2 children,Male,Located within CBSA,6 or younger,NA
+104,No,No,White,10,Owned with mortgage or loan,2 children,Female,Located within CBSA,7-12,Well
+105,No,No,White,10,Owned with mortgage or loan,2 children,Male,Located within CBSA,7-12,Very well
+106,No,No,Black,4,Rented,1 child,Female,Located within CBSA,6 or younger,NA
+107,Yes,No,Mixed race,7,Owned with mortgage or loan,2 children,Male,Located outside CBSA,7-12,Well
+108,No,No,Asian,9,Rented,2 children,Male,Located within CBSA,7-12,Very well
+109,Yes,No,White,5,Owned with mortgage or loan,1 child,Female,Located within CBSA,6 or younger,Very well
+110,No,Yes,Mixed race,2,Rented,1 child,Male,Located within CBSA,6 or younger,NA
+111,No,No,White,8,Owned free and clear,4 or more children,Female,Located within CBSA,7-12,Not well
+112,No,No,Black,16,Rented,4 or more children,Female,Located within CBSA,13-17,Not well
+113,No,Yes,White,16,Owned free and clear,3 children,Female,Located within CBSA,13-17,Very well
+114,Yes,Yes,White,2,Occupied without payment of rent,3 children,Male,Located within CBSA,6 or younger,NA
+115,No,No,Mixed race,7,Occupied without payment of rent,1 child,Female,Located within CBSA,7-12,Very well
+116,No,No,White,16,Owned with mortgage or loan,2 children,Male,Located within CBSA,13-17,Very well
+117,No,No,Asian,11,Owned with mortgage or loan,3 children,Female,Located outside CBSA,7-12,Very well
+118,Yes,No,Black,2,Owned with mortgage or loan,3 children,Female,Located outside CBSA,6 or younger,NA
+119,No,Yes,Asian,7,Owned with mortgage or loan,3 children,Male,Located within CBSA,7-12,Very well
+120,Yes,No,Black,12,Rented,4 or more children,Male,Located outside CBSA,7-12,Very well
+121,No,Yes,White,6,Owned with mortgage or loan,2 children,Male,Located within CBSA,6 or younger,Well
+122,No,No,White,2,Owned with mortgage or loan,4 or more children,Female,Located within CBSA,6 or younger,NA
+123,No,Yes,White,15,Owned with mortgage or loan,2 children,Male,Located outside CBSA,13-17,Very well
+124,No,No,Native Hawaiian or Pacific Islander,16,Owned with mortgage or loan,4 or more children,Female,Located within CBSA,13-17,Very well
+125,Yes,Yes,Native Hawaiian or Pacific Islander,8,Owned with mortgage or loan,1 child,Female,Located outside CBSA,7-12,Well
+126,No,No,Asian,2,Owned with mortgage or loan,2 children,Male,Located within CBSA,6 or younger,NA
+127,Yes,No,White,13,Occupied without payment of rent,1 child,Male,Located within CBSA,13-17,Not well
+128,No,No,Native Hawaiian or Pacific Islander,4,Rented,1 child,Male,Located within CBSA,6 or younger,NA
+129,No,No,Black,5,Owned with mortgage or loan,3 children,Female,Located within CBSA,6 or younger,Not well
+130,No,No,Black,5,Rented,3 children,Female,Located within CBSA,6 or younger,Well
+131,Yes,Yes,Mixed race,11,Owned with mortgage or loan,3 children,Male,Located within CBSA,7-12,Very well
+132,Yes,No,Mixed race,12,Owned with mortgage or loan,2 children,Male,Located outside CBSA,7-12,Well
+133,Yes,No,White,6,Owned free and clear,3 children,Male,Located outside CBSA,6 or younger,Well
+134,No,No,White,9,Rented,3 children,Female,Located within CBSA,7-12,Very well
+135,Yes,No,White,5,Rented,2 children,Male,Located within CBSA,6 or younger,Very well
+136,No,No,Mixed race,1,Rented,2 children,Female,Located outside CBSA,6 or younger,NA
+137,Yes,No,White,16,Rented,2 children,Female,Located within CBSA,13-17,Very well
+138,Yes,Yes,White,8,Rented,4 or more children,Male,Located within CBSA,7-12,Very well
+139,Yes,No,White,10,Rented,4 or more children,Female,Located within CBSA,7-12,Very well
+140,Yes,Yes,White,1,Owned with mortgage or loan,3 children,Female,Located within CBSA,6 or younger,NA
+141,No,No,American Indian or Alaska Native,16,Owned with mortgage or loan,3 children,Male,Located within CBSA,13-17,Very well
+142,No,No,White,17,Owned with mortgage or loan,1 child,Male,Located within CBSA,13-17,Very well
+143,No,No,Black,5,Rented,1 child,Female,Located within CBSA,6 or younger,Very well
+144,No,Yes,White,7,Occupied without payment of rent,1 child,Female,Located outside CBSA,7-12,Very well
+145,No,Yes,Native Hawaiian or Pacific Islander,4,Owned with mortgage or loan,2 children,Male,Located within CBSA,6 or younger,NA
+146,Yes,No,White,10,Rented,2 children,Male,Located within CBSA,7-12,Not well
+147,No,No,Native Hawaiian or Pacific Islander,8,Owned with mortgage or loan,4 or more children,Female,Located within CBSA,7-12,Very well
+148,Yes,No,Black,15,Owned with mortgage or loan,2 children,Male,Located within CBSA,13-17,Very well
+149,No,No,White,5,Owned with mortgage or loan,4 or more children,Male,Located within CBSA,6 or younger,Well
+150,Yes,No,Black,12,Owned free and clear,1 child,Male,Located within CBSA,7-12,Very well
+151,No,No,White,1,Rented,2 children,Male,Located within CBSA,6 or younger,NA
+152,Yes,Yes,Asian,14,Owned with mortgage or loan,3 children,Female,Located within CBSA,13-17,Very well
+153,No,No,White,8,Owned with mortgage or loan,2 children,Male,Located outside CBSA,7-12,Very well
+154,No,No,White,9,Rented,4 or more children,Male,Located within CBSA,7-12,Well
+155,No,No,White,1,Owned with mortgage or loan,4 or more children,Female,Located outside CBSA,6 or younger,NA
+156,Yes,Yes,Mixed race,5,Owned free and clear,3 children,Male,Located outside CBSA,6 or younger,Very well
+157,No,No,Black,8,Owned with mortgage or loan,2 children,Male,Located outside CBSA,7-12,Very well
+158,Yes,No,Black,10,Owned with mortgage or loan,4 or more children,Male,Located within CBSA,7-12,Very well
+159,Yes,No,Mixed race,6,Owned free and clear,3 children,Male,Located within CBSA,6 or younger,Not well
+160,Yes,No,White,15,Owned with mortgage or loan,1 child,Male,Located within CBSA,13-17,Very well
+161,No,No,Mixed race,9,Rented,3 children,Male,Located within CBSA,7-12,Well
+162,Yes,Yes,Mixed race,9,Owned free and clear,2 children,Female,Located within CBSA,7-12,Very well
+163,No,No,White,8,Rented,1 child,Female,Located within CBSA,7-12,Very well
+164,No,No,White,16,Owned free and clear,3 children,Male,Located within CBSA,13-17,Very well
+165,No,Yes,Mixed race,16,Rented,3 children,Female,Located outside CBSA,13-17,Well
+166,No,Yes,White,13,Owned with mortgage or loan,1 child,Female,Located within CBSA,13-17,Well
+167,No,No,White,3,Owned free and clear,2 children,Male,Located within CBSA,6 or younger,NA
+168,Yes,No,White,5,Occupied without payment of rent,3 children,Male,Located outside CBSA,6 or younger,Well
+169,No,No,Black,3,Owned free and clear,1 child,Female,Located within CBSA,6 or younger,NA
+170,No,No,Asian,1,Rented,1 child,Male,Located within CBSA,6 or younger,NA
+171,No,No,American Indian or Alaska Native,10,Rented,3 children,Female,Located within CBSA,7-12,Very well
+172,Yes,Yes,White,8,Rented,1 child,Male,Located within CBSA,7-12,Very well
+173,No,No,Black,15,Rented,3 children,Female,Located within CBSA,13-17,Well
+174,Yes,No,White,7,Rented,2 children,Female,Located within CBSA,7-12,Very well
+175,No,Yes,Asian,14,Owned free and clear,1 child,Female,Located within CBSA,13-17,Very well
+176,Yes,No,Black,6,Owned with mortgage or loan,3 children,Male,Located within CBSA,6 or younger,Well
+177,No,No,White,9,Owned with mortgage or loan,1 child,Female,Located within CBSA,7-12,Not at all
+178,No,Yes,Black,11,Rented,1 child,Female,Located within CBSA,7-12,Not at all
+179,Yes,Yes,Mixed race,16,Owned with mortgage or loan,1 child,Male,Located within CBSA,13-17,Very well
+180,Yes,No,White,10,Owned with mortgage or loan,2 children,Female,Located within CBSA,7-12,Well
+181,Yes,No,White,4,Owned with mortgage or loan,4 or more children,Male,Located within CBSA,6 or younger,NA
+182,No,No,White,16,Owned free and clear,1 child,Female,Located within CBSA,13-17,Well
+183,No,No,Native Hawaiian or Pacific Islander,16,Rented,3 children,Female,Located outside CBSA,13-17,Very well
+184,Yes,Yes,White,3,Rented,2 children,Male,Located within CBSA,6 or younger,NA
+185,Yes,No,Asian,14,Owned with mortgage or loan,2 children,Female,Located within CBSA,13-17,Well
+186,Yes,No,White,6,Rented,1 child,Female,Located outside CBSA,6 or younger,Well
+187,No,No,Black,10,Owned with mortgage or loan,2 children,Male,Located outside CBSA,7-12,Very well
+188,No,No,White,2,Rented,3 children,Male,Located within CBSA,6 or younger,NA
+189,Yes,No,White,12,Owned with mortgage or loan,1 child,Female,Located within CBSA,7-12,Very well
+190,No,No,Asian,6,Owned with mortgage or loan,2 children,Male,Located within CBSA,6 or younger,Well
+191,No,Yes,Mixed race,4,Owned with mortgage or loan,4 or more children,Male,Located within CBSA,6 or younger,NA
+192,Yes,No,Mixed race,17,Owned free and clear,2 children,Female,Located within CBSA,13-17,Very well
+193,Yes,Yes,Native Hawaiian or Pacific Islander,14,Owned with mortgage or loan,2 children,Female,Located within CBSA,13-17,Not at all
+194,Yes,No,White,4,Occupied without payment of rent,3 children,Female,Located within CBSA,6 or younger,NA
+195,No,No,Black,3,Owned free and clear,1 child,Female,Located outside CBSA,6 or younger,NA
+196,No,No,Asian,7,Owned with mortgage or loan,3 children,Male,Located within CBSA,7-12,Very well
+197,No,No,White,14,Owned with mortgage or loan,2 children,Female,Located outside CBSA,13-17,Very well
+198,Yes,No,White,9,Rented,2 children,Male,Located within CBSA,7-12,Very well
+199,No,No,White,12,Rented,2 children,Male,Located within CBSA,7-12,Very well
+200,No,No,Black,9,Owned with mortgage or loan,2 children,Female,Located outside CBSA,7-12,Very well
+201,No,No,White,3,Rented,3 children,Female,Located outside CBSA,6 or younger,NA
+202,Yes,No,Asian,9,Rented,3 children,Female,Located within CBSA,7-12,Well
+203,Yes,No,Mixed race,4,Owned with mortgage or loan,1 child,Female,Located within CBSA,6 or younger,NA
+204,No,No,White,3,Owned free and clear,3 children,Male,Located outside CBSA,6 or younger,NA
+205,No,No,White,2,Owned free and clear,2 children,Male,Located outside CBSA,6 or younger,NA
+206,Yes,No,American Indian or Alaska Native,17,Owned with mortgage or loan,4 or more children,Male,Located within CBSA,13-17,Very well
+207,No,No,Mixed race,10,Rented,1 child,Male,Located within CBSA,7-12,Well
+208,No,No,White,9,Owned with mortgage or loan,2 children,Female,Located outside CBSA,7-12,Very well
+209,No,No,Mixed race,14,Owned free and clear,3 children,Female,Located outside CBSA,13-17,Well
+210,No,Yes,Asian,14,Rented,1 child,Male,Located within CBSA,13-17,Very well
+211,No,No,Mixed race,1,Owned with mortgage or loan,2 children,Female,Located within CBSA,6 or younger,NA
+212,No,No,Mixed race,4,Owned with mortgage or loan,4 or more children,Female,Located within CBSA,6 or younger,NA
+213,Yes,No,Black,11,Occupied without payment of rent,4 or more children,Male,Located within CBSA,7-12,Not well
+214,No,No,Black,6,Owned with mortgage or loan,2 children,Male,Located outside CBSA,6 or younger,Well
+215,Yes,No,White,10,Owned with mortgage or loan,3 children,Male,Located within CBSA,7-12,Not well
+216,No,No,Asian,3,Owned with mortgage or loan,3 children,Female,Located within CBSA,6 or younger,NA
+217,Yes,No,Black,2,Rented,1 child,Female,Located within CBSA,6 or younger,NA
+218,Yes,No,White,12,Owned with mortgage or loan,3 children,Male,Located outside CBSA,7-12,Very well
+219,No,Yes,Mixed race,11,Rented,1 child,Male,Located within CBSA,7-12,Very well
+220,No,No,White,10,Rented,1 child,Female,Located within CBSA,7-12,Very well
+221,No,No,Mixed race,17,Rented,3 children,Female,Located outside CBSA,13-17,Very well
+222,No,Yes,Native Hawaiian or Pacific Islander,14,Rented,1 child,Female,Located within CBSA,13-17,Very well
+223,No,No,American Indian or Alaska Native,2,Rented,2 children,Male,Located outside CBSA,6 or younger,NA
+224,Yes,No,White,14,Owned free and clear,3 children,Male,Located within CBSA,13-17,Well
+225,Yes,No,White,7,Owned with mortgage or loan,1 child,Male,Located within CBSA,7-12,Well
+226,No,No,Mixed race,8,Owned with mortgage or loan,4 or more children,Male,Located within CBSA,7-12,Very well
+227,Yes,No,Mixed race,2,Owned with mortgage or loan,2 children,Female,Located within CBSA,6 or younger,NA
+228,No,Yes,Black,12,Occupied without payment of rent,1 child,Male,Located outside CBSA,7-12,Well
+229,No,No,Mixed race,16,Owned with mortgage or loan,3 children,Female,Located within CBSA,13-17,Very well
+230,Yes,No,White,17,Owned with mortgage or loan,1 child,Male,Located within CBSA,13-17,Well
+231,Yes,No,Black,9,Owned free and clear,3 children,Female,Located outside CBSA,7-12,Very well
+232,Yes,No,Native Hawaiian or Pacific Islander,6,Owned with mortgage or loan,2 children,Male,Located within CBSA,6 or younger,Very well
+233,No,No,White,15,Rented,1 child,Male,Located within CBSA,13-17,Very well
+234,No,No,White,16,Owned with mortgage or loan,3 children,Female,Located within CBSA,13-17,Not well
+235,Yes,No,Asian,2,Owned with mortgage or loan,2 children,Male,Located within CBSA,6 or younger,NA
+236,No,No,Native Hawaiian or Pacific Islander,14,Rented,2 children,Female,Located outside CBSA,13-17,Not well
+237,Yes,Yes,White,7,Owned free and clear,3 children,Male,Located within CBSA,7-12,Very well
+238,No,No,White,13,Owned free and clear,2 children,Male,Located within CBSA,13-17,Very well
+239,No,Yes,American Indian or Alaska Native,16,Owned with mortgage or loan,2 children,Female,Located within CBSA,13-17,Well
+240,No,No,White,5,Owned with mortgage or loan,2 children,Female,Located within CBSA,6 or younger,Well
+241,No,No,Black,17,Owned with mortgage or loan,2 children,Female,Located within CBSA,13-17,Very well
+242,No,No,American Indian or Alaska Native,16,Rented,2 children,Female,Located within CBSA,13-17,Well
+243,Yes,Yes,Black,10,Owned with mortgage or loan,1 child,Male,Located within CBSA,7-12,Very well
+244,Yes,No,White,4,Owned with mortgage or loan,2 children,Female,Located within CBSA,6 or younger,NA
+245,Yes,No,Black,2,Rented,3 children,Female,Located within CBSA,6 or younger,NA
+246,No,No,Black,7,Owned with mortgage or loan,2 children,Female,Located within CBSA,7-12,Very well
+247,No,No,White,3,Owned free and clear,1 child,Female,Located within CBSA,6 or younger,NA
+248,Yes,No,Mixed race,5,Rented,1 child,Female,Located within CBSA,6 or younger,Well
+249,Yes,No,White,15,Rented,2 children,Female,Located within CBSA,13-17,Very well
+250,No,No,Asian,13,Owned with mortgage or loan,1 child,Female,Located outside CBSA,13-17,Not at all
+251,Yes,No,Black,13,Owned with mortgage or loan,3 children,Female,Located within CBSA,13-17,Very well
+252,No,Yes,White,14,Owned with mortgage or loan,1 child,Female,Located outside CBSA,13-17,Very well
+253,No,No,White,13,Owned with mortgage or loan,2 children,Female,Located within CBSA,13-17,Very well
+254,Yes,Yes,Asian,4,Owned with mortgage or loan,2 children,Male,Located within CBSA,6 or younger,NA
+255,No,No,Asian,14,Owned with mortgage or loan,1 child,Male,Located within CBSA,13-17,Not at all
+256,No,Yes,Black,8,Owned with mortgage or loan,2 children,Male,Located within CBSA,7-12,Very well
+257,No,Yes,White,15,Owned with mortgage or loan,3 children,Male,Located within CBSA,13-17,Well
+258,No,Yes,Native Hawaiian or Pacific Islander,6,Owned with mortgage or loan,2 children,Male,Located within CBSA,6 or younger,Well
+259,Yes,No,White,3,Owned with mortgage or loan,1 child,Male,Located outside CBSA,6 or younger,NA
+260,No,No,White,13,Owned with mortgage or loan,2 children,Female,Located within CBSA,13-17,Well
+261,No,No,Mixed race,4,Rented,3 children,Male,Located within CBSA,6 or younger,NA
+262,No,Yes,White,10,Occupied without payment of rent,3 children,Male,Located outside CBSA,7-12,Not well
+263,Yes,Yes,Asian,3,Owned free and clear,2 children,Male,Located within CBSA,6 or younger,NA
+264,No,No,White,1,Owned with mortgage or loan,2 children,Female,Located within CBSA,6 or younger,NA
+265,Yes,No,White,10,Owned with mortgage or loan,4 or more children,Female,Located within CBSA,7-12,Well
+266,No,Yes,Mixed race,11,Occupied without payment of rent,2 children,Female,Located outside CBSA,7-12,Very well
+267,No,No,White,3,Owned with mortgage or loan,2 children,Female,Located within CBSA,6 or younger,NA
+268,No,No,Mixed race,5,Rented,3 children,Male,Located outside CBSA,6 or younger,Well
+269,Yes,No,Asian,17,Owned free and clear,3 children,Female,Located outside CBSA,13-17,Very well
+270,No,No,White,9,Owned free and clear,2 children,Female,Located within CBSA,7-12,Very well
+271,No,No,Mixed race,16,Owned with mortgage or loan,2 children,Male,Located within CBSA,13-17,Very well
+272,Yes,No,White,4,Owned with mortgage or loan,1 child,Male,Located within CBSA,6 or younger,NA
+273,No,No,White,13,Owned with mortgage or loan,4 or more children,Female,Located within CBSA,13-17,Very well
+274,No,No,Asian,14,Rented,1 child,Male,Located outside CBSA,13-17,Very well
+275,Yes,Yes,White,15,Owned with mortgage or loan,4 or more children,Male,Located outside CBSA,13-17,Very well
+276,Yes,No,White,12,Rented,4 or more children,Male,Located within CBSA,7-12,Well
+277,No,No,Asian,8,Owned free and clear,1 child,Female,Located within CBSA,7-12,Well
+278,No,No,White,14,Owned with mortgage or loan,1 child,Male,Located within CBSA,13-17,Very well
+279,Yes,No,Black,9,Owned with mortgage or loan,4 or more children,Male,Located outside CBSA,7-12,Well
+280,No,No,White,13,Occupied without payment of rent,4 or more children,Male,Located outside CBSA,13-17,Well
+281,No,No,Asian,8,Owned with mortgage or loan,2 children,Female,Located within CBSA,7-12,Very well
+282,Yes,No,White,16,Owned with mortgage or loan,4 or more children,Male,Located within CBSA,13-17,Very well
+283,No,No,White,8,Owned with mortgage or loan,1 child,Male,Located outside CBSA,7-12,Very well
+284,No,No,Black,10,Owned with mortgage or loan,1 child,Female,Located within CBSA,7-12,Very well
+285,No,No,White,12,Rented,3 children,Male,Located within CBSA,7-12,Very well
+286,No,No,Mixed race,8,Owned with mortgage or loan,2 children,Female,Located within CBSA,7-12,Very well
+287,No,No,White,6,Rented,3 children,Female,Located within CBSA,6 or younger,Well
+288,No,Yes,Asian,7,Owned with mortgage or loan,3 children,Male,Located within CBSA,7-12,Very well
+289,No,No,White,15,Owned with mortgage or loan,3 children,Male,Located within CBSA,13-17,Well
+290,No,No,Mixed race,14,Owned with mortgage or loan,2 children,Male,Located within CBSA,13-17,Very well
+291,No,No,White,15,Occupied without payment of rent,2 children,Female,Located outside CBSA,13-17,Very well
+292,No,No,White,14,Rented,4 or more children,Female,Located within CBSA,13-17,Well
+293,No,No,White,15,Owned free and clear,2 children,Male,Located within CBSA,13-17,Well
+294,No,No,White,8,Owned with mortgage or loan,2 children,Female,Located within CBSA,7-12,Well
+295,No,No,Mixed race,4,Owned with mortgage or loan,3 children,Female,Located within CBSA,6 or younger,NA
+296,Yes,No,Black,14,Owned with mortgage or loan,2 children,Male,Located outside CBSA,13-17,Very well
+297,No,No,White,9,Owned with mortgage or loan,3 children,Male,Located within CBSA,7-12,Very well
+298,No,No,White,1,Owned with mortgage or loan,3 children,Male,Located within CBSA,6 or younger,NA
+299,No,Yes,White,6,Owned with mortgage or loan,2 children,Female,Located within CBSA,6 or younger,Not well
+300,No,No,White,11,Owned with mortgage or loan,1 child,Female,Located outside CBSA,7-12,Very well
+301,No,No,Black,1,Owned free and clear,1 child,Male,Located within CBSA,6 or younger,NA
+302,No,No,White,2,Rented,3 children,Female,Located within CBSA,6 or younger,NA
+303,Yes,Yes,Native Hawaiian or Pacific Islander,16,Owned with mortgage or loan,1 child,Female,Located within CBSA,13-17,Very well
+304,No,No,Mixed race,9,Owned with mortgage or loan,4 or more children,Female,Located within CBSA,7-12,Well
+305,No,No,White,4,Owned with mortgage or loan,3 children,Female,Located outside CBSA,6 or younger,NA
+306,No,No,White,16,Rented,2 children,Male,Located within CBSA,13-17,Very well
+307,No,Yes,Black,2,Owned with mortgage or loan,4 or more children,Female,Located within CBSA,6 or younger,NA
+308,No,No,White,15,Rented,3 children,Female,Located within CBSA,13-17,Very well
+309,Yes,Yes,White,12,Rented,2 children,Female,Located outside CBSA,7-12,Well
+310,No,No,Mixed race,16,Owned with mortgage or loan,3 children,Female,Located within CBSA,13-17,Very well
+311,No,No,White,1,Owned free and clear,2 children,Male,Located within CBSA,6 or younger,NA
+312,Yes,No,White,9,Owned with mortgage or loan,1 child,Female,Located within CBSA,7-12,Well
+313,No,No,White,8,Owned with mortgage or loan,2 children,Male,Located within CBSA,7-12,Well
+314,Yes,No,White,1,Owned with mortgage or loan,2 children,Female,Located outside CBSA,6 or younger,NA
+315,Yes,Yes,White,16,Owned with mortgage or loan,1 child,Male,Located outside CBSA,13-17,Very well
+316,Yes,Yes,White,15,Owned with mortgage or loan,1 child,Male,Located within CBSA,13-17,Very well
+317,Yes,No,White,9,Owned with mortgage or loan,1 child,Female,Located within CBSA,7-12,Not well
+318,No,No,Asian,16,Rented,1 child,Female,Located within CBSA,13-17,Well
+319,No,No,Native Hawaiian or Pacific Islander,11,Owned with mortgage or loan,2 children,Male,Located within CBSA,7-12,Well
+320,Yes,No,Asian,9,Owned with mortgage or loan,1 child,Female,Located within CBSA,7-12,Well
+321,No,No,Black,5,Owned free and clear,2 children,Female,Located outside CBSA,6 or younger,Not well
+322,Yes,No,White,11,Owned with mortgage or loan,2 children,Male,Located within CBSA,7-12,Well
+323,No,No,Mixed race,16,Rented,2 children,Female,Located within CBSA,13-17,Not at all
+324,No,No,Black,7,Rented,4 or more children,Female,Located within CBSA,7-12,Very well
+325,No,No,Asian,13,Occupied without payment of rent,3 children,Male,Located within CBSA,13-17,Not at all
+326,Yes,No,Asian,1,Owned with mortgage or loan,4 or more children,Female,Located within CBSA,6 or younger,NA
+327,Yes,No,Asian,2,Owned free and clear,3 children,Female,Located within CBSA,6 or younger,NA
+328,No,No,Black,16,Occupied without payment of rent,1 child,Female,Located outside CBSA,13-17,Well
+329,Yes,No,White,13,Owned with mortgage or loan,3 children,Male,Located outside CBSA,13-17,Very well
+330,No,No,Black,11,Owned free and clear,1 child,Male,Located within CBSA,7-12,Very well
+331,No,No,White,7,Owned free and clear,3 children,Female,Located within CBSA,7-12,Well
+332,Yes,No,American Indian or Alaska Native,6,Rented,2 children,Female,Located outside CBSA,6 or younger,Very well
+333,No,No,White,5,Owned with mortgage or loan,2 children,Male,Located within CBSA,6 or younger,Not at all
+334,No,No,Asian,16,Rented,3 children,Male,Located within CBSA,13-17,Not well
+335,Yes,No,Mixed race,13,Rented,1 child,Female,Located within CBSA,13-17,Very well
+336,No,No,White,6,Owned with mortgage or loan,3 children,Male,Located within CBSA,6 or younger,Well
+337,No,No,White,1,Owned with mortgage or loan,2 children,Female,Located within CBSA,6 or younger,NA
+338,No,No,White,9,Owned with mortgage or loan,1 child,Female,Located within CBSA,7-12,Very well
+339,No,No,White,11,Owned with mortgage or loan,1 child,Female,Located outside CBSA,7-12,Very well
+340,No,No,Black,11,Owned with mortgage or loan,2 children,Female,Located outside CBSA,7-12,Very well
+341,No,No,White,10,Owned with mortgage or loan,1 child,Male,Located within CBSA,7-12,Very well
+342,No,No,White,8,Owned with mortgage or loan,1 child,Female,Located within CBSA,7-12,Not at all
+343,No,No,White,2,Owned with mortgage or loan,2 children,Female,Located within CBSA,6 or younger,NA
+344,No,No,White,2,Owned free and clear,2 children,Male,Located outside CBSA,6 or younger,NA
+345,Yes,No,White,13,Occupied without payment of rent,4 or more children,Male,Located outside CBSA,13-17,Very well
+346,No,No,Asian,10,Occupied without payment of rent,2 children,Male,Located outside CBSA,7-12,Very well
+347,No,Yes,White,11,Rented,1 child,Female,Located within CBSA,7-12,Not at all
+348,No,No,Mixed race,12,Owned free and clear,3 children,Male,Located within CBSA,7-12,Very well
+349,Yes,No,White,6,Owned with mortgage or loan,4 or more children,Male,Located within CBSA,6 or younger,Very well
+350,No,No,White,16,Owned with mortgage or loan,1 child,Female,Located within CBSA,13-17,Well
+351,No,Yes,White,16,Owned with mortgage or loan,2 children,Male,Located within CBSA,13-17,Very well
+352,No,No,Asian,15,Owned free and clear,1 child,Male,Located within CBSA,13-17,Very well
+353,Yes,No,White,16,Owned free and clear,2 children,Male,Located within CBSA,13-17,Very well
+354,No,No,Native Hawaiian or Pacific Islander,4,Owned with mortgage or loan,2 children,Male,Located within CBSA,6 or younger,NA
+355,Yes,No,White,9,Owned free and clear,2 children,Female,Located within CBSA,7-12,Very well
+356,No,No,White,5,Rented,4 or more children,Male,Located within CBSA,6 or younger,Not well
+357,No,No,White,1,Rented,3 children,Male,Located within CBSA,6 or younger,NA
+358,No,No,White,4,Occupied without payment of rent,4 or more children,Female,Located within CBSA,6 or younger,NA
+359,No,Yes,White,6,Owned with mortgage or loan,3 children,Male,Located within CBSA,6 or younger,Not well
+360,No,No,White,10,Owned free and clear,1 child,Male,Located within CBSA,7-12,Very well
+361,Yes,No,White,4,Owned with mortgage or loan,4 or more children,Male,Located within CBSA,6 or younger,NA
+362,Yes,No,White,15,Owned with mortgage or loan,4 or more children,Male,Located within CBSA,13-17,Very well
+363,Yes,No,White,9,Rented,1 child,Female,Located within CBSA,7-12,Well
+364,No,No,Native Hawaiian or Pacific Islander,17,Owned free and clear,1 child,Female,Located within CBSA,13-17,Very well
+365,Yes,No,Black,1,Rented,3 children,Male,Located outside CBSA,6 or younger,NA
+366,Yes,Yes,Mixed race,3,Rented,2 children,Male,Located outside CBSA,6 or younger,NA
+367,No,No,White,13,Owned with mortgage or loan,3 children,Male,Located within CBSA,13-17,Well
+368,No,No,Black,9,Rented,2 children,Female,Located outside CBSA,7-12,Not at all
+369,No,No,White,13,Owned with mortgage or loan,2 children,Female,Located within CBSA,13-17,Well
+370,No,No,White,3,Rented,4 or more children,Male,Located within CBSA,6 or younger,NA
+371,No,No,Asian,10,Owned with mortgage or loan,1 child,Male,Located within CBSA,7-12,Very well
+372,No,Yes,Asian,9,Owned with mortgage or loan,4 or more children,Female,Located within CBSA,7-12,Well
+373,Yes,No,Mixed race,8,Owned free and clear,3 children,Male,Located within CBSA,7-12,Very well
+374,No,No,Asian,9,Owned with mortgage or loan,3 children,Male,Located within CBSA,7-12,Very well
+375,No,No,White,11,Owned free and clear,1 child,Male,Located within CBSA,7-12,Well
+376,No,No,Native Hawaiian or Pacific Islander,14,Owned free and clear,1 child,Male,Located within CBSA,13-17,Very well
+377,No,Yes,Asian,9,Owned with mortgage or loan,3 children,Male,Located within CBSA,7-12,Not well
+378,No,Yes,White,11,Rented,3 children,Female,Located within CBSA,7-12,Very well
+379,No,No,White,3,Owned with mortgage or loan,1 child,Male,Located within CBSA,6 or younger,NA
+380,No,No,White,13,Owned with mortgage or loan,3 children,Male,Located outside CBSA,13-17,Very well
+381,No,No,White,16,Rented,2 children,Male,Located within CBSA,13-17,Very well
+382,No,No,Mixed race,9,Owned with mortgage or loan,4 or more children,Male,Located within CBSA,7-12,Not well
+383,Yes,Yes,White,8,Owned free and clear,1 child,Female,Located within CBSA,7-12,Very well
+384,Yes,No,Asian,4,Owned free and clear,1 child,Male,Located within CBSA,6 or younger,NA
+385,No,No,American Indian or Alaska Native,3,Owned with mortgage or loan,2 children,Male,Located within CBSA,6 or younger,NA
+386,No,No,Black,17,Owned free and clear,3 children,Male,Located within CBSA,13-17,Not at all
+387,No,No,White,10,Owned with mortgage or loan,3 children,Female,Located within CBSA,7-12,Well
+388,No,Yes,White,5,Occupied without payment of rent,1 child,Female,Located outside CBSA,6 or younger,Well
+389,No,No,Asian,5,Owned with mortgage or loan,2 children,Female,Located within CBSA,6 or younger,Well
+390,Yes,No,Mixed race,10,Rented,1 child,Female,Located within CBSA,7-12,Well
+391,No,No,White,11,Owned with mortgage or loan,2 children,Male,Located within CBSA,7-12,Very well
+392,No,Yes,White,3,Owned free and clear,2 children,Female,Located within CBSA,6 or younger,NA
+393,No,No,Mixed race,12,Rented,2 children,Male,Located within CBSA,7-12,Very well
+394,No,No,Native Hawaiian or Pacific Islander,8,Rented,4 or more children,Female,Located within CBSA,7-12,Not at all
+395,No,No,American Indian or Alaska Native,3,Owned with mortgage or loan,3 children,Female,Located within CBSA,6 or younger,NA
+396,No,No,White,17,Owned free and clear,1 child,Female,Located within CBSA,13-17,Very well
+397,No,No,Black,7,Owned with mortgage or loan,3 children,Female,Located within CBSA,7-12,Well
+398,No,No,White,17,Owned free and clear,2 children,Female,Located within CBSA,13-17,Very well
+399,Yes,No,White,8,Rented,2 children,Female,Located within CBSA,7-12,Not well
+400,No,Yes,White,15,Owned with mortgage or loan,4 or more children,Male,Located outside CBSA,13-17,Very well
+401,Yes,No,American Indian or Alaska Native,8,Rented,3 children,Female,Located within CBSA,7-12,Well
+402,No,No,White,10,Owned free and clear,1 child,Female,Located outside CBSA,7-12,Very well
+403,Yes,Yes,White,2,Owned free and clear,1 child,Male,Located within CBSA,6 or younger,NA
+404,Yes,No,Mixed race,15,Owned with mortgage or loan,4 or more children,Female,Located outside CBSA,13-17,Very well
+405,No,No,Asian,2,Owned with mortgage or loan,1 child,Female,Located outside CBSA,6 or younger,NA
+406,No,No,White,10,Owned with mortgage or loan,4 or more children,Female,Located within CBSA,7-12,Very well
+407,Yes,No,Asian,5,Owned free and clear,4 or more children,Female,Located within CBSA,6 or younger,Very well
+408,No,Yes,Mixed race,15,Owned with mortgage or loan,3 children,Female,Located within CBSA,13-17,Very well
+409,Yes,Yes,White,1,Owned with mortgage or loan,1 child,Female,Located within CBSA,6 or younger,NA
+410,No,Yes,Black,6,Owned with mortgage or loan,3 children,Female,Located within CBSA,6 or younger,Well
+411,No,No,White,2,Owned with mortgage or loan,2 children,Male,Located within CBSA,6 or younger,NA
+412,Yes,No,White,9,Rented,2 children,Female,Located within CBSA,7-12,Very well
+413,No,No,Asian,8,Owned free and clear,2 children,Female,Located within CBSA,7-12,Very well
+414,Yes,No,White,13,Rented,1 child,Male,Located within CBSA,13-17,Very well
+415,No,No,Native Hawaiian or Pacific Islander,11,Owned with mortgage or loan,3 children,Male,Located outside CBSA,7-12,Well
+416,No,Yes,White,10,Rented,1 child,Male,Located outside CBSA,7-12,Very well
+417,No,No,Black,11,Owned with mortgage or loan,3 children,Female,Located outside CBSA,7-12,Not at all
+418,No,No,White,1,Owned free and clear,2 children,Male,Located within CBSA,6 or younger,NA
+419,Yes,No,White,4,Owned free and clear,3 children,Male,Located within CBSA,6 or younger,NA
+420,Yes,No,Black,17,Occupied without payment of rent,3 children,Male,Located outside CBSA,13-17,Well
+421,No,No,White,12,Owned with mortgage or loan,2 children,Female,Located outside CBSA,7-12,Well
+422,Yes,No,White,8,Owned free and clear,3 children,Male,Located outside CBSA,7-12,Very well
+423,No,No,Mixed race,10,Owned free and clear,3 children,Male,Located within CBSA,7-12,Well
+424,Yes,No,White,9,Owned with mortgage or loan,1 child,Male,Located within CBSA,7-12,Very well
+425,No,No,Black,16,Owned free and clear,3 children,Female,Located within CBSA,13-17,Very well
+426,Yes,No,White,16,Owned with mortgage or loan,3 children,Male,Located within CBSA,13-17,Very well
+427,No,No,White,1,Owned with mortgage or loan,2 children,Female,Located within CBSA,6 or younger,NA
+428,Yes,No,White,2,Owned with mortgage or loan,3 children,Male,Located within CBSA,6 or younger,NA
+429,No,No,White,11,Owned free and clear,1 child,Female,Located within CBSA,7-12,Very well
+430,Yes,No,White,17,Owned with mortgage or loan,3 children,Female,Located outside CBSA,13-17,Very well
+431,Yes,No,White,14,Rented,4 or more children,Male,Located within CBSA,13-17,Very well
+432,No,No,White,13,Rented,1 child,Male,Located within CBSA,13-17,Very well
+433,No,No,White,2,Rented,1 child,Female,Located outside CBSA,6 or younger,NA
+434,No,Yes,Mixed race,3,Rented,4 or more children,Female,Located within CBSA,6 or younger,NA
+435,No,No,Mixed race,7,Rented,3 children,Female,Located outside CBSA,7-12,Not well
+436,No,No,White,1,Owned with mortgage or loan,4 or more children,Male,Located outside CBSA,6 or younger,NA
+437,No,Yes,Black,4,Owned with mortgage or loan,3 children,Male,Located outside CBSA,6 or younger,NA
+438,No,No,White,10,Owned with mortgage or loan,3 children,Male,Located within CBSA,7-12,Well
+439,No,No,Black,17,Owned with mortgage or loan,3 children,Female,Located within CBSA,13-17,Well
+440,No,Yes,Asian,17,Rented,2 children,Male,Located within CBSA,13-17,Very well
+441,No,No,White,13,Owned with mortgage or loan,2 children,Male,Located within CBSA,13-17,Well
+442,No,No,White,10,Owned with mortgage or loan,1 child,Male,Located within CBSA,7-12,Well
+443,No,No,White,2,Owned with mortgage or loan,2 children,Male,Located within CBSA,6 or younger,NA
+444,No,No,White,2,Owned free and clear,3 children,Female,Located within CBSA,6 or younger,NA
+445,Yes,No,Mixed race,13,Rented,2 children,Female,Located within CBSA,13-17,Very well
+446,No,No,White,10,Owned free and clear,3 children,Female,Located within CBSA,7-12,Very well
+447,No,No,White,2,Owned with mortgage or loan,3 children,Male,Located within CBSA,6 or younger,NA
+448,No,No,Asian,5,Owned free and clear,4 or more children,Male,Located within CBSA,6 or younger,Very well
+449,No,Yes,Mixed race,8,Rented,1 child,Female,Located within CBSA,7-12,Not well
+450,No,No,White,10,Owned with mortgage or loan,3 children,Male,Located within CBSA,7-12,Very well
+451,Yes,No,Black,3,Owned with mortgage or loan,3 children,Male,Located within CBSA,6 or younger,NA
+452,No,No,White,13,Rented,2 children,Male,Located within CBSA,13-17,Very well
+453,No,No,White,14,Rented,3 children,Female,Located within CBSA,13-17,Well
+454,No,No,White,1,Owned free and clear,4 or more children,Female,Located outside CBSA,6 or younger,NA
+455,No,Yes,White,14,Owned with mortgage or loan,3 children,Male,Located outside CBSA,13-17,Not at all
+456,No,No,Mixed race,9,Rented,4 or more children,Female,Located within CBSA,7-12,Not at all
+457,No,No,White,1,Rented,2 children,Male,Located within CBSA,6 or younger,NA
+458,No,No,Mixed race,1,Owned with mortgage or loan,2 children,Male,Located within CBSA,6 or younger,NA
+459,No,No,Black,1,Owned free and clear,2 children,Male,Located within CBSA,6 or younger,NA
+460,No,No,White,5,Occupied without payment of rent,1 child,Male,Located within CBSA,6 or younger,Very well
+461,Yes,No,Mixed race,17,Owned free and clear,2 children,Male,Located within CBSA,13-17,Well
+462,Yes,No,Native Hawaiian or Pacific Islander,14,Owned with mortgage or loan,3 children,Female,Located within CBSA,13-17,Very well
+463,No,Yes,White,7,Owned free and clear,1 child,Male,Located within CBSA,7-12,Well
+464,No,No,Asian,9,Owned with mortgage or loan,4 or more children,Female,Located within CBSA,7-12,Not well
+465,No,No,White,12,Owned with mortgage or loan,2 children,Female,Located within CBSA,7-12,Very well
+466,No,No,Native Hawaiian or Pacific Islander,9,Owned with mortgage or loan,1 child,Female,Located within CBSA,7-12,Well
+467,No,No,White,16,Owned with mortgage or loan,2 children,Male,Located within CBSA,13-17,Well
+468,No,No,White,2,Owned free and clear,2 children,Male,Located within CBSA,6 or younger,NA
+469,Yes,No,Asian,14,Owned with mortgage or loan,4 or more children,Female,Located within CBSA,13-17,Very well
+470,Yes,No,White,15,Rented,1 child,Female,Located within CBSA,13-17,Very well
+471,No,Yes,Asian,14,Owned free and clear,2 children,Male,Located within CBSA,13-17,Very well
+472,No,No,Native Hawaiian or Pacific Islander,12,Owned with mortgage or loan,1 child,Male,Located within CBSA,7-12,Well
+473,No,Yes,Black,7,Owned free and clear,1 child,Male,Located within CBSA,7-12,Well
+474,No,Yes,Mixed race,9,Owned free and clear,2 children,Male,Located within CBSA,7-12,Very well
+475,No,No,American Indian or Alaska Native,3,Owned free and clear,3 children,Male,Located within CBSA,6 or younger,NA
+476,No,Yes,White,11,Rented,2 children,Female,Located outside CBSA,7-12,Very well
+477,No,No,White,16,Owned free and clear,2 children,Male,Located within CBSA,13-17,Very well
+478,No,No,Black,7,Rented,2 children,Female,Located within CBSA,7-12,Very well
+479,No,No,Black,16,Owned with mortgage or loan,4 or more children,Female,Located within CBSA,13-17,Not at all
+480,No,No,Black,7,Owned with mortgage or loan,4 or more children,Male,Located outside CBSA,7-12,Well
+481,No,Yes,White,12,Rented,1 child,Male,Located within CBSA,7-12,Well
+482,No,Yes,White,2,Owned free and clear,2 children,Female,Located within CBSA,6 or younger,NA
+483,No,Yes,Black,17,Owned with mortgage or loan,2 children,Male,Located outside CBSA,13-17,Very well
+484,No,No,Mixed race,11,Rented,3 children,Male,Located within CBSA,7-12,Very well
+485,No,No,Asian,2,Owned with mortgage or loan,3 children,Male,Located outside CBSA,6 or younger,NA
+486,No,Yes,American Indian or Alaska Native,17,Owned with mortgage or loan,3 children,Male,Located outside CBSA,13-17,Very well
+487,Yes,No,Native Hawaiian or Pacific Islander,10,Owned free and clear,4 or more children,Female,Located within CBSA,7-12,Not well
+488,Yes,No,White,14,Owned with mortgage or loan,1 child,Male,Located within CBSA,13-17,Not well
+489,No,Yes,Black,16,Rented,3 children,Male,Located within CBSA,13-17,Well
+490,Yes,No,White,12,Owned with mortgage or loan,2 children,Male,Located within CBSA,7-12,Not well
+491,Yes,No,Mixed race,4,Owned with mortgage or loan,1 child,Male,Located within CBSA,6 or younger,NA
+492,No,Yes,White,15,Owned with mortgage or loan,2 children,Male,Located within CBSA,13-17,Very well
+493,No,No,White,14,Rented,3 children,Female,Located outside CBSA,13-17,Very well
+494,No,No,White,4,Owned with mortgage or loan,1 child,Female,Located outside CBSA,6 or younger,NA
+495,No,Yes,Black,13,Owned with mortgage or loan,4 or more children,Male,Located within CBSA,13-17,Well
+496,No,Yes,White,16,Owned with mortgage or loan,2 children,Male,Located within CBSA,13-17,Very well
+497,No,Yes,White,17,Rented,4 or more children,Male,Located within CBSA,13-17,Well
+498,No,Yes,White,6,Owned with mortgage or loan,2 children,Male,Located outside CBSA,6 or younger,Not well
+499,Yes,No,White,8,Rented,1 child,Female,Located within CBSA,7-12,Very well
+500,No,No,Asian,2,Owned with mortgage or loan,3 children,Male,Located within CBSA,6 or younger,NA
