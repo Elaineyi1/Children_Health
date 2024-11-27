@@ -154,7 +154,7 @@ model <- readRDS(file = here::here("models/model.rds"))
 #| echo: false
 #| warning: false
 #| label: tbl-model
-#| tbl-cap: Estimating Whether a Child Needs Treatment for Emotional Development Behavior Based on Age Group, Race, English Proficiency, and Limited Ability
+#| tbl-cap: Estimating Whether a Child Needs Treatment for Emotional Development Behaviour Based on Age Group, Race, English Proficiency, and Limited Ability
 
 modelsummary(
   list(

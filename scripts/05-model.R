@@ -3,7 +3,7 @@
 # a child needs treatment for emotion develop behave
 # Author: Boxuan Yi
 # Email: boxuan.yi@mail.utoronto.ca
-# Date: 24 November 2024
+# Date: 26 November 2024
 # Prerequisites: Factors and priors are chosen
 
 library(dplyr) 
