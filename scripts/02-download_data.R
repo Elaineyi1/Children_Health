@@ -2,7 +2,7 @@
 # Purpose: Download and Read in data
 # Author: Boxuan Yi
 # Email: boxuan.yi@mail.utoronto.ca
-# Date: 26 November 2024
+# Date: 28 November 2024
 # Prerequisites: None
 
 # The raw datasets are downloaded manually from
@@ -14,8 +14,5 @@ library(haven)
 # Read in the SAS dataset
 data_raw <- read_sas(here("data", "01-raw_data", 
                               "nsch_2023e_screener.sas7bdat"))
-
-# Save the dataset as a CSV file
-write_csv(
-  x = data_raw,
-  file = here("data", "01-raw_data", "data_raw.csv"))
+follow_up_raw <- read_sas(here("data", "01-raw_data", 
+                          "nsch_2023e_topical.sas7bdat"))

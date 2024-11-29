@@ -1,9 +1,9 @@
 #### Preamble ####
-# Purpose: Create and then test a model to explore how several factors affect whether 
-# a child needs treatment for emotion develop behave
+# Purpose: Create and then test a model to explore how several factors affect
+# whether a child has depression
 # Author: Boxuan Yi
 # Email: boxuan.yi@mail.utoronto.ca
-# Date: 26 November 2024
+# Date: 28 November 2024
 # Prerequisites: Factors and priors are chosen
 
 library(dplyr) 
@@ -18,7 +18,7 @@ test_data <- read_parquet(here::here("data", "02-analysis_data", "test_data.parq
 # Model Training
 model <-
   stan_glm(
-    child_emotion_develop ~ age_group + race + english + child_limited_ability,
+    depression ~ bullied + friends + live_with_mental + violence,
     data = train_data,
     family = binomial(link = "logit"),
     prior = normal(location = 0, scale = 2.5, autoscale = TRUE),
@@ -38,6 +38,6 @@ predictions <- predict(model, newdata = test_data, type = "response")
 predicted_classes <- ifelse(predictions >= 0.5, "Yes", "No")
 predicted_classes <- factor(predicted_classes, levels = c("Yes", "No"))
 
-actual_values <- test_data$child_emotion_develop
+actual_values <- test_data$depression
 correctness <- sum(predicted_classes == actual_values)/length(actual_values)
 

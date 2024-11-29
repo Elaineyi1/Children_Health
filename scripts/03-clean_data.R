@@ -2,7 +2,7 @@
 # Purpose: Clean the dataset
 # Author: Boxuan Yi
 # Email: boxuan.yi@mail.utoronto.ca
-# Date: 26 November 2024
+# Date: 28 November 2024
 # Prerequisites: Be familiar with the dataset and its methodology.
 
 library(here)
@@ -12,49 +12,121 @@ library(janitor)
 library(arrow)
 library(dplyr) 
 
-data_raw <- read_sas(here("data", "01-raw_data", 
-                          "nsch_2023e_screener.sas7bdat"))
+follow_up_raw <- read_sas(here("data", "01-raw_data", 
+                               "nsch_2023e_topical.sas7bdat"))
 
-data_cleaned <- data_raw |>
-  clean_names() |>
-  select(
-    c_k2q22, c_k2q16, c_race_r, c_age_years, c_english, 
-    tenure, totkids_r, c_sex, cbsafp_yn, hhids, stratum) |> 
-  drop_na() |>
+# Clean the data
+data_cleaned <- follow_up_raw |>
+  select(K2Q32A, BIRTH_YR, A1_MENTHEALTH, A2_MENTHEALTH, SCREENTIME, 
+         BULLIED_R, MAKEFRIEND, HOPEFUL, ACE7, ACE8, K2Q32B, K2Q32C) |> 
+  drop_na(-c(K2Q32B, K2Q32C)) |> 
   mutate(
-    age_group = case_when(
-      c_age_years <= 6 ~ "6 or younger",
-      c_age_years >= 7 & c_age_years <= 12 ~ "7-12",
-      c_age_years >= 13 & c_age_years <= 17 ~ "13-17")) |> 
+    age = 2024 - BIRTH_YR,
+    parent_mental_health = rowMeans(cbind(A1_MENTHEALTH, A2_MENTHEALTH), na.rm = TRUE)
+  ) |> 
   rename(
-    child_emotion_develop = c_k2q22,
-    child_limited_ability = c_k2q16,
-    race = c_race_r,
-    age = c_age_years,
-    english = c_english,
-    kids_number = totkids_r,
-    sex = c_sex,
-    cbsa = cbsafp_yn
+    depression = K2Q32A,
+    depression_current = K2Q32B,
+    depression_level = K2Q32C,
+    screentime = SCREENTIME,
+    bullied = BULLIED_R,
+    friends = MAKEFRIEND,
+    hopeful = HOPEFUL,
+    violence = ACE7, 
+    live_with_mental = ACE8
+  ) |> select(-BIRTH_YR, -A1_MENTHEALTH, -A2_MENTHEALTH)
+
+
+data_cleaned <- data_cleaned |>
+  mutate(
+    depression = recode(
+      depression,
+      `1` = "Yes",
+      `2` = "No"
+    ),
+    depression = factor(depression, levels = c("No", "Yes")),
+    screentime = recode(
+      screentime,
+      `1` = "Less than 1 hour",
+      `2` = "1 hour",
+      `3` = "2 hours",
+      `4` = "3 hours",
+      `5` = "4 or more hours"
+    ),
+    screentime = factor(screentime, levels = c(
+      "Less than 1 hour",
+      "1 hour",
+      "2 hours",
+      "3 hours",
+      "4 or more hours"
+    )),
+    bullied = recode(
+      bullied,
+      `1` = "Never",
+      `2` = "1-2 times in the past year",
+      `3` = "1-2 times per month",
+      `4` = "1-2 times per week",
+      `5` = "Almost every day"
+    ),
+    bullied = factor(bullied, levels = c(
+      "1" = "Never",
+      "2" = "1-2 times in the past year",
+      "3" = "1-2 times per month",
+      "4" = "1-2 times per week",
+      "5" = "Almost every day"
+    )),
+    friends = recode(
+      friends,
+      `1` = "No difficulty",
+      `2` = "A little difficulty",
+      `3` = "A lot of difficulty"
+    ),
+    friends = factor(friends, levels = c(
+      "No difficulty",
+      "A little difficulty",
+      "A lot of difficulty"
+    )),
+    hopeful = recode(
+      hopeful,
+      `1` = "All of the time",
+      `2` = "Most of the time",
+      `3` = "Some of the time",
+      `4` = "None of the time"
+    ),
+    hopeful = factor(hopeful, levels = c(
+      "All of the time",
+      "Most of the time",
+      "Some of the time",
+      "None of the time"
+    )),
+    violence = recode(
+      violence,
+      `1` = "Yes",
+      `2` = "No"
+    ),
+    violence = factor(violence, levels = c("No", "Yes")),
+    live_with_mental = recode(
+      live_with_mental,
+      `1` = "Yes",
+      `2` = "No"
+    ),
+    live_with_mental = factor(live_with_mental, levels = c("Yes", "No")),
+    depression_current = recode(
+      depression_current,
+      `1` = "Yes",
+      `2` = "No"
+    ),
+    depression_current = factor(depression_current, levels = c("No", "Yes")),
+    depression_level = recode(
+      depression_level,
+      `1` = "Mild",
+      `2` = "Moderate",
+      `3` = "Severe"
+    ),
+    depression_level = factor(depression_level, levels = c("Mild", "Moderate", "Severe"))
   )
 
-data_cleaned <- data_cleaned |> mutate(
-  sex = recode(sex, `1` = "Male", `2` = "Female"),
-  english = recode(english, `1` = "Very well", `2` = "Well", `3` = "Not well", 
-                   `4` = "Not at all"),
-  race = recode(race, `1` = "White", `2` = "Black", `3` = "American Indian or Alaska Native", 
-                `4` = "Asian", `5` = "Native Hawaiian or Pacific Islander", 
-                `7` = "Mixed race"),
-  child_emotion_develop = recode(child_emotion_develop, `1` = "Yes", `2` = "No"),
-  child_limited_ability = recode(child_limited_ability, `1` = "Yes", `2` = "No"),
-  tenure = recode(tenure, `1` = "Owned with mortgage or loan", 
-                  `2` = "Owned free and clear", `3` = "Rented", 
-                  `4` = "Occupied without payment of rent"),
-  kids_number = recode(kids_number, `1` = "1 child", `2` = "2 children", 
-                       `3` = "3 children", `4` = "4 or more children"),
-  cbsa = recode(cbsa, `1` = "Located within CBSA", `2` = "Located outside CBSA")
-)
-
-data_cleaned$child_emotion_develop <- as.factor(data_cleaned$child_emotion_develop)
+data_cleaned$depression <- as.factor(data_cleaned$depression)
 
 # Testing/Training splits
 set.seed(7)
