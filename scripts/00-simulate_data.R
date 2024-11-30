@@ -1,18 +1,20 @@
+#### Preamble ####
 # Purpose: Simulate the data
 # Author: Boxuan Yi
 # Email: boxuan.yi@mail.utoronto.ca
-# Date: 28 November 2024
+# Date: 30 November 2024
 # Prerequisites: None
 
 library(tibble)
 library(dplyr)
-library(readr)
+library(here)
+library(arrow)
 
 set.seed(7)
 
 simulated_data <- tibble(
   id = 1:500,
-  BIRTH_YR = sample(2005:2023, 500, replace = TRUE), 
+  BIRTH_YR = sample(2007:2018, 500, replace = TRUE), 
   A1_MENTHEALTH = sample(1:5, 500, replace = TRUE), 
   A2_MENTHEALTH = sample(1:5, 500, replace = TRUE), 
   screentime = sample(1:5, 500, replace = TRUE), 
@@ -40,10 +42,20 @@ simulated_data <- tibble(
       age <= 6 ~ sample(1:5, n(), replace = TRUE, prob = c(0.3, 0.3, 0.2, 0.1, 0.1)),
       age >= 13 ~ sample(1:5, n(), replace = TRUE, prob = c(0.1, 0.1, 0.1, 0.3, 0.4)), 
       TRUE ~ screentime 
-    )
+    ),
+    depression_current = case_when(
+      depression == 1 ~ sample(c(1, 2), n(), replace = TRUE, prob = c(0.8, 0.2)),
+      TRUE ~ 2
+    ),
+    depression_level = case_when(
+      depression_current == 1 ~ sample(c("Mild", "Moderate", "Severe"), n(), replace = TRUE, prob = c(0.5, 0.3, 0.2)),
+      TRUE ~ NA_character_
+    ),
+    poverty = sample(c(50:399, rep(400, 400)), 500, replace = TRUE)
   ) |>
   mutate(
     depression = recode(depression, `1` = "Yes", `2` = "No"),
+    depression_current = recode(depression_current, `1` = "Yes", `2` = "No"),
     screentime = recode(screentime, `1` = "Less than 1 hour", `2` = "1 hour", 
                         `3` = "2 hours", `4` = "3 hours", `5` = "4 or more hours"),
     bullied = recode(bullied, `1` = "Never", `2` = "1-2 times in the past year", 
@@ -56,5 +68,9 @@ simulated_data <- tibble(
     live_with_mental = recode(live_with_mental, `1` = "Yes", `2` = "No")
   )
 
+simulated_data$depression <- as.factor(simulated_data$depression)
 
-write_csv(simulated_data, "data/00-simulated_data/simulated_data.csv")
+write_parquet(
+  x = simulated_data,
+  sink = here("data", "00-simulated_data", "simulated_data.parquet")
+)

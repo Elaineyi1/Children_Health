@@ -3,7 +3,7 @@
 # whether a child has depression
 # Author: Boxuan Yi
 # Email: boxuan.yi@mail.utoronto.ca
-# Date: 28 November 2024
+# Date: 30 November 2024
 # Prerequisites: Factors and priors are chosen
 
 library(dplyr) 
@@ -18,7 +18,7 @@ test_data <- read_parquet(here::here("data", "02-analysis_data", "test_data.parq
 # Model Training
 model <-
   stan_glm(
-    depression ~ bullied + friends + live_with_mental + violence,
+    depression ~ bullied + friends + live_with_mental + violence + poverty,
     data = train_data,
     family = binomial(link = "logit"),
     prior = normal(location = 0, scale = 2.5, autoscale = TRUE),

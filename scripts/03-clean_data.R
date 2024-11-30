@@ -2,7 +2,7 @@
 # Purpose: Clean the dataset
 # Author: Boxuan Yi
 # Email: boxuan.yi@mail.utoronto.ca
-# Date: 28 November 2024
+# Date: 30 November 2024
 # Prerequisites: Be familiar with the dataset and its methodology.
 
 library(here)
@@ -10,18 +10,19 @@ library(haven)
 library(tidyr)
 library(janitor)
 library(arrow)
-library(dplyr) 
+library(dplyr)
 
 follow_up_raw <- read_sas(here("data", "01-raw_data", 
                                "nsch_2023e_topical.sas7bdat"))
 
 # Clean the data
 data_cleaned <- follow_up_raw |>
-  select(K2Q32A, BIRTH_YR, A1_MENTHEALTH, A2_MENTHEALTH, SCREENTIME, 
-         BULLIED_R, MAKEFRIEND, HOPEFUL, ACE7, ACE8, K2Q32B, K2Q32C) |> 
+  select(K2Q32A, FORMTYPE, BIRTH_YR, A1_MENTHEALTH, A2_MENTHEALTH, FPL_I1, 
+         SCREENTIME, BULLIED_R, MAKEFRIEND, HOPEFUL, ACE7, ACE8, K2Q32B, K2Q32C) |> 
+  filter(FORMTYPE != 'T1') |>
   drop_na(-c(K2Q32B, K2Q32C)) |> 
   mutate(
-    age = 2024 - BIRTH_YR,
+    age = 2023 - BIRTH_YR,
     parent_mental_health = rowMeans(cbind(A1_MENTHEALTH, A2_MENTHEALTH), na.rm = TRUE)
   ) |> 
   rename(
@@ -29,12 +30,14 @@ data_cleaned <- follow_up_raw |>
     depression_current = K2Q32B,
     depression_level = K2Q32C,
     screentime = SCREENTIME,
+    poverty = FPL_I1,
     bullied = BULLIED_R,
     friends = MAKEFRIEND,
     hopeful = HOPEFUL,
     violence = ACE7, 
     live_with_mental = ACE8
-  ) |> select(-BIRTH_YR, -A1_MENTHEALTH, -A2_MENTHEALTH)
+  ) |> filter(age >= 6 & age <= 17) |>
+  select(-BIRTH_YR, -A1_MENTHEALTH, -A2_MENTHEALTH, -FORMTYPE)
 
 
 data_cleaned <- data_cleaned |>
