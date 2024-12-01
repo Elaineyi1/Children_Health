@@ -1,4 +1,4 @@
-# Children' Depression in the USA
+# Children's Depression in the USA
 ## Overview
 This paper uses a Bayesian logical regression model to analyze whether a child has depression using the predictors: being bullied, difficulty making or keeping friends, living with someone with mental illness, whether the child is a victim of violence or witnessed violence in the neighbourhood, and family poverty. The results indicate that children facing daily bullying, having a lot of difficulty making and keeping friends, living with someone who is mentally ill, suicidal, or severely depressed, and being a victim of violence or witnessing violence in their neighbourhood are more likely to have depression. 
 
