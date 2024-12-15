@@ -83,11 +83,11 @@ test_data <- read_parquet(here::here("data", "02-analysis_data", "test_data.parq
 #| fig-height: 3
 #| fig-width: 4.5
 #| label: fig-age
-#| fig-cap: Distribution of Child's Age and Whether the Child Has Depression
+#| fig-cap: This figure shows the distribution of child's age and whether the child has depression. Both the number of children and the proportion experiencing depression increase with age.
 
 data_cleaned |> ggplot(mapping = aes(x = age, fill = depression)) +
   geom_bar() +
-  labs(x = "Age", y = "Number of observations", fill = "Whether a Child Has Depression") +
+  labs(x = "Age", y = "Number of observations", fill = "Whether a Child Has Depression", title = "Distribution of Child's Age and Whether \nthe Child Has Depression") +
   theme(legend.position = "bottom") +
   scale_x_continuous(breaks = seq(6, 17, by = 1))
 ```
@@ -102,12 +102,12 @@ The proportion of different depression severity levels among children currently 
 #| fig-height: 3
 #| fig-width: 4.5
 #| label: fig-level
-#| fig-cap: Age and Proportion of Depression Levels Among Depressed Children
+#| fig-cap: The figure shows the age and proportion of depression levels among depressed children. The severity of depression increases with age.
 
 data_cleaned |> drop_na(depression_level) |>
   ggplot(mapping = aes(x = age, fill = depression_level)) +
   geom_bar(position = 'fill') +
-  labs(x = "Age", y = "Proportion of Different Levels", fill = "Depression Level") +
+  labs(x = "Age", y = "Proportion of Different Levels", fill = "Depression Level", title = "Proportion of Depression Levels by Age") +
   theme(legend.position = "bottom")  +
   scale_x_continuous(breaks = seq(6, 17, by = 1))
 ```
@@ -120,7 +120,7 @@ data_cleaned |> drop_na(depression_level) |>
 #| layout-ncol: 1
 #| fig-width: 7
 #| fig-height: 2
-#| fig-cap: Getting Bullied refers to the frequency with which the child is bullied, picked on, or excluded by other children, excluding siblings or dating partners. Making Friends describes the level of difficulty this child has in making or keeping friends compared to other children their age. Screentime refers to the amount of time the child spends on most weekdays in front of a TV, computer, cellphone, or other electronic device, watching programs, playing games, accessing the internet, or using social media.
+#| fig-cap: Depression is strongly associated with being bullied and difficulties in making friends, while screen time has a weaker but still positive relationship with depression. Getting Bullied refers to the frequency with which the child is bullied, picked on, or excluded by other children, excluding siblings or dating partners. Making Friends describes the level of difficulty this child has in making or keeping friends compared to other children their age. Screentime refers to the amount of time the child spends on most weekdays in front of a TV, computer, cellphone, or other electronic device, watching programs, playing games, accessing the internet, or using social media.
 #| fig-subcap: ["Whether the Child Was Bullied and Has Depression", "Whether the Child Had Difficulty Making Friends and Has Depression", "Child's Weekday Screentime and Whether the Child Had Depression"]
 
 data_cleaned |> ggplot(aes(x=bullied,fill = factor(depression))) +
@@ -153,7 +153,7 @@ data_cleaned |> ggplot(aes(x=screentime,fill = factor(depression))) +
 #| layout-ncol: 1
 #| fig-width: 6.5
 #| fig-height: 1.7
-#| fig-cap: Lived with Mental Illness refers to living with someone who was mentally ill, suicidal, or severely depressed. Hopefulness describes how often the family remains hopeful when facing problems even during difficult times. Victim of Violence means the child was either a victim of violence or witnessed violence in the neighbourhood.
+#| fig-cap: Children living with someone experiencing mental illness, lacking family hopefulness, or exposed to violence have higher depression rates, with the strongest association observed in households with mental illness. Lived with Mental Illness refers to living with someone who was mentally ill, suicidal, or severely depressed. Hopefulness describes how often the family remains hopeful when facing problems even during difficult times. Victim of Violence means the child was either a victim of violence or witnessed violence in the neighbourhood. 
 #| fig-subcap: ["Whether the Child Lived with Mental Illness and Has Depression", "Whether the Child's Family Stayed Hopeful and Whether the Child Has Depression", "Whether the Child Was a Victim of Violence and Whether the Child Has Depression"]
 
 data_cleaned |> ggplot(aes(x=live_with_mental,fill = factor(depression))) +
@@ -191,7 +191,7 @@ The family poverty ratio is calculated as the ratio of total family income to th
 #| echo: false
 #| warning: false
 #| message: false
-#| fig-cap: 'The family poverty ratio is calculated as the ratio of total family income to the family poverty threshold and reported as a rounded percentage from 50 to 400. Values  beyond this range are reported as 50 or 400, respectively. A larger ratio indicates a wealthier family.'
+#| fig-cap: 'The family poverty ratio is calculated as the ratio of total family income to the family poverty threshold and reported as a rounded percentage from 50 to 400. Values  beyond this range are reported as 50 or 400, respectively. A larger ratio indicates a wealthier family. The figure shows that the wealthier the family, the less likely a child is to experience depression.'
 
 data_cleaned |> 
   mutate(poverty_group = cut(poverty, 
@@ -261,7 +261,7 @@ model <- readRDS(file = here::here("models/model.rds"))
 #| echo: false
 #| warning: false
 #| label: tbl-model
-#| tbl-cap: Estimating whether a child has depression based on whether the child is bullied, has difficulty making or keeping friends, lives with someone with mental illness, whether the child is a victim of violence or has witnessed violence in the neighbourhood, and family poverty.
+#| tbl-cap: The model estimates whether a child has depression based on whether the child is bullied, has difficulty making or keeping friends, lives with someone with mental illness, whether the child is a victim of violence or has witnessed violence in the neighbourhood, and family poverty. Overall, children who are bullied almost every day, have significant difficulty making friends, live with someone with a mental illness, and have experienced violence are the most likely to suffer from depression. 
 
 modelsummary(
   list(
@@ -324,6 +324,10 @@ Given the challenges and shifts introduced by the COVID-19 pandemic, future stud
 
 The models developed in this analysis provide a foundation for discussions on resource allocation, including healthcare, clinical interventions, and the importance of familial support in promoting children’s mental health. By identifying the complex factors that influence children’s well-being, educators and healthcare professionals can make informed decisions. These findings can guide children in seeking help and inform the development of targeted treatment strategies for those in need.
 
+\newpage
+
+\appendix
+
 # Appendix {#sec-appendix}
 ## Surveys and Sampling {#sec-appendix_survey}
 The following information is from 2023 National Survey of Children’s Health, United States Census Bureau [@NSCHDocumentation].
@@ -346,6 +350,9 @@ Respondents had four ways to complete the survey: Web Instrument, Paper Instrume
 - Paper Instrument were printed, trimmed, and stitched through an in-house print on-demand process using a system that allowed personalization to each respondent. If the respondent returned the screener by mail, it was processed to determine the presence of eligible children at the address. Returned forms were processed using iCADE, which captured responses through optical mark recognition, optical character recognition, and keying from image. If the address did not match the respondent’s residence or if no children usually resided at the address, the survey was concluded, and the household was removed from further mailings. If children were listed as residing at the address, Census Bureau staff used subsampling methodology to select one child from the household roster as the subject for the topical questionnaire.
 - Completion of Telephone Questionnaire Assistance over the phone was supported by trained Automated Tracking and Control staff.
 - For Email Questionnaire Assistance, An email address was provided on all invitation letters and the Centurion login page. Emails were managed by call centre staff in Arizona, who logged each inquiry in a tracking spreadsheet and assigned purpose codes similar to those used for Telephone Questionnaire Assistance. Email agents used scripted responses to address common concerns and questions, ensuring consistent and accurate information. When replying, agents removed any potentially personally identifiable information from the response emails.
+
+### Summary
+This dataset is not limited to exploring childhood depression. It includes 457 variables covering a wide range of demographic and health-related topics, as mentioned in @sec-data and @sec-model. With robust survey and sampling methods designed to minimize bias, this dataset ensures comprehensive representation and reliability, making it an ideal resource for research on various aspects of children’s health. 
 
 ## Survey Questions Related to the Variables {#sec-appendix_questions}
 The survey questions mentioned in this paper, which translate real-world phenomena into data, are as follows [@NSCHDatasets]:
